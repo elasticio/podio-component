@@ -1,6 +1,5 @@
 {
   "name": "podio-component",
-  "version": "1.0.0",
   "description": "Podio API integration component template for elastic.io platform",
   "main": "index.js",
   "scripts": {

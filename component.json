@@ -1,6 +1,7 @@
 {
     "title": "Podio",
-    "desctiprion": "Podio",
+    "description": "Podio",
+    "version": "1.0.1",
     "credentials": {
         "fields":{
             "oauth":{
