@@ -3,7 +3,7 @@ import * as commons from '@elastic.io/component-commons-library';
 import { getSecret, refreshSecret, isNumberNaN } from './utils';
 
 const MAXIMUM_4XX_ERRORS_RETRIES = 5;
-const LOOKER_STUDIO_API_URL = 'https://datastudio.googleapis.com/v1';
+const PODIO_API_URL = 'https://api.podio.com';
 
 export default class Client {
   logger: any;
@@ -36,7 +36,7 @@ export default class Client {
 
     opts = {
       ...opts,
-      baseURL: LOOKER_STUDIO_API_URL,
+      baseURL: PODIO_API_URL,
       headers: {
         ...opts.headers || {},
         Authorization: `Bearer ${this.accessToken}`
