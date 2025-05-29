@@ -26,7 +26,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const commons = __importStar(require("@elastic.io/component-commons-library"));
 const utils_1 = require("./utils");
 const MAXIMUM_4XX_ERRORS_RETRIES = 5;
-const LOOKER_STUDIO_API_URL = 'https://datastudio.googleapis.com/v1';
+const PODIO_API_URL = 'https://api.podio.com';
 class Client {
     constructor(context, cfg) {
         this.logger = context.logger;
@@ -46,7 +46,7 @@ class Client {
         }
         opts = {
             ...opts,
-            baseURL: LOOKER_STUDIO_API_URL,
+            baseURL: PODIO_API_URL,
             headers: {
                 ...opts.headers || {},
                 Authorization: `Bearer ${this.accessToken}`
