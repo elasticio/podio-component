@@ -41,8 +41,8 @@
         "link": "/components/podio/index.html#make-raw-request"
       },
       "metadata": {
-        "in": "./src/schemas/rawRequest.in.json",
-        "out": "./src/schemas/rawRequest.out.json"
+        "in": "./src/schemas/rawRequest/in.json",
+        "out": "./src/schemas/rawRequest/out.json"
       }
     }
   },
