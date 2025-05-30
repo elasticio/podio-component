@@ -1,6 +1,6 @@
 {
   "name": "podio-component",
-  "description": "Podio API integration component for elastic.io platform",
+  "description": "Podio API integration component for the integration platform",
   "homepage": "https://elastic.io",
   "scripts": {
     "audit": "better-npm-audit audit --level high --production",

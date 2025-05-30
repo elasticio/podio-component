@@ -1,6 +1,6 @@
 {
   "title": "Podio component",
-  "description": "Podio component for elastic.io platform",
+  "description": "Podio component for the integration platform",
   "version": "1.0.0-dev.3",
   "authClientTypes": [
     "oauth2"
