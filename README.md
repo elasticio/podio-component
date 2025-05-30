@@ -43,10 +43,6 @@ Now you can create new credentials for the component on the platform:
 
 Executes custom request.
 
-#### Configuration Fields
-
-* **Don't throw error on 404 Response** - (optional, boolean): Treat 404 HTTP responses not as error, defaults to `false`.
-
 #### Input Metadata
 
 * **Url** - (string, required): Path of the resource relative to the base URL.
