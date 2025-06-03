@@ -1,6 +1,6 @@
 {
   "title": "Podio component",
-  "description": "Podio component for the integration platform",
+  "description": "A smart connector for accessing Podio API",
   "version": "1.0.0",
   "authClientTypes": [
     "oauth2"
