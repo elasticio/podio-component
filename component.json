@@ -1,77 +1,50 @@
 {
-    "title": "Podio",
-    "description": "Podio",
-    "version": "1.0.1",
-    "credentials": {
-        "fields":{
-            "oauth":{
-                "label": "Authentication",
-                "viewClass": "OAuthFieldView",
-                "required": true
-            }
-        },
-        "oauth2":{
-            "client_id": "{{PODIO_APP_ID}}",
-            "client_secret": "{{PODIO_APP_SECRET}}",
-            "auth_uri": "https://podio.com/oauth/authorize",
-            "token_uri": "https://podio.com/oauth/token"
+  "title": "Podio component",
+  "description": "A smart connector for accessing Podio API",
+  "version": "1.0.0",
+  "authClientTypes": [
+    "oauth2"
+  ],
+  "credentials": {
+    "fields": {
+      "oauth": {
+        "label": "Authentication",
+        "viewClass": "HTTPAuthView",
+        "required": true
+      },
+      "retries": {
+        "label": "Number of retries",
+        "viewClass": "TextFieldView",
+        "placeholder": "5",
+        "required": false,
+        "help": {
+          "description": "Number of retries (Default: 5)"
         }
-    },
-    "actions": {
-        "createItem": {
-            "main": "./lib/actions/createItem.js",
-            "title": "Create Item",
-            "fields": {
-                "appId": {
-                    "viewClass": "SelectView",
-                    "prompt": "Select an Application",
-                    "label": "Podio Application",
-                    "required": false,
-                    "model": "getApplications"
-                },
-                "spaceId": {
-                    "viewClass": "SelectView",
-                    "prompt": "Select a Space",
-                    "label": "Podio Space",
-                    "required": true,
-                    "model": "getSpaces"
-                }
-            },
-            "dynamicMetadata": true
-        },
-        "createOrganization": {
-            "main": "./lib/actions/createOrganization.js",
-            "title": "Create Organization",
-            "metadata": {
-                "in": "./lib/schemas/createOrganization.in.json",
-                "out": "./lib/schemas/createOrganization.out.json"
-            }
-        },
-        "createReminder": {
-            "main": "./lib/actions/createReminder.js",
-            "title": "Create Reminder",
-            "metadata": {
-                "in": "./lib/schemas/createReminder.in.json",
-                "out": "./lib/schemas/createReminder.out.json"
-            }
-        },
-        "createTask": {
-            "main": "./lib/actions/createTask.js",
-            "title": "Create Task",
-            "metadata": {
-                "in": "./lib/schemas/createTask.in.json",
-                "out": "./lib/schemas/createTask.out.json"
-            }
+      },
+      "retriesDelay": {
+        "label": "Delay between retries",
+        "viewClass": "TextFieldView",
+        "placeholder": "1000",
+        "required": false,
+        "help": {
+          "description": "Delay between retries in ms (Default: 10000ms)"
         }
-    },
-    "triggers": {
-        "getContacts": {
-            "main": "./lib/triggers/getContacts.js",
-            "title": "Get Contacts",
-            "type" : "polling",
-            "metadata": {
-                "out": "./lib/schemas/getContacts.out.json"
-            }
-        }
+      }
     }
+  },
+  "actions": {
+    "makeRawRequest": {
+      "main": "./src/actions/rawRequest.js",
+      "title": "Make Raw Request",
+      "help": {
+        "description": "Manually construct a request to send to the server.",
+        "link": "/components/podio/index.html#make-raw-request"
+      },
+      "metadata": {
+        "in": "./src/schemas/rawRequest/in.json",
+        "out": "./src/schemas/rawRequest/out.json"
+      }
+    }
+  },
+  "triggers": {}
 }

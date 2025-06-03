@@ -1,3 +1,4 @@
-# 1.0.1 (April 07, 2023)
+# 1.0.0 (June 03, 2025)
 
-* Fix version mismatch
+* Initial component release
+* Added `Make Raw Request` Action
