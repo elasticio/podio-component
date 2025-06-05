@@ -5,6 +5,7 @@
 * [Description](#description)
 * [Credentials](#credentials)
 * [Actions](#actions)
+  * [Lookup Object By ID](#lookup-object-by-id)
   * [Make Raw Request](#make-raw-request)
 
 ## Description

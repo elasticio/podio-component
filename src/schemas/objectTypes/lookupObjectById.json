@@ -1,13 +1,13 @@
 {
-	"action": "Action",
-	"app": "Apps",
-	"batch": "Batch",
-	"comment": "Comment",
-	"file": "File",
-	"flow": "Flow",
-	"form": "Form",
+  "action": "Action",
+  "app": "Apps",
+  "batch": "Batch",
+  "comment": "Comment",
+  "file": "File",
+  "flow": "Flow",
+  "form": "Form",
   "item": "Item",
-	"notification": "Notification",
-	"organization": "Organization",
-	"task": "Task"
+  "notification": "Notification",
+  "organization": "Organization",
+  "task": "Task"
 }
