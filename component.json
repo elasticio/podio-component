@@ -33,6 +33,28 @@
     }
   },
   "actions": {
+    "lookupObjectById": {
+      "main": "./src/actions/lookupObjectById.js",
+      "title": "Lookup Object By ID",
+      "help": {
+        "description": "Lookup Object By ID",
+        "link": "/components/podio/index.html#lookup-object-by-id"
+      },
+      "fields": {
+        "objectType": {
+          "label": "Object Type",
+          "viewClass": "SelectView",
+          "prompt": "Please select the type of object to lookup",
+          "required": true,
+          "order": 10,
+          "model": "getLookupByIdObjects"
+        }
+      },
+      "metadata": {
+        "in": "src/schemas/metadata/lookupObjectById/in.json",
+        "out": "src/schemas/metadata/lookupObjectById/out.json"
+      }
+    },
     "makeRawRequest": {
       "main": "./src/actions/rawRequest.js",
       "title": "Make Raw Request",
