@@ -1,0 +1,163 @@
+{
+  "comments": [],
+  "completed_by": null,
+  "completed_on": null,
+  "completed_via": null,
+  "created_by": {
+    "avatar": null,
+    "avatar_id": null,
+    "avatar_type": "file",
+    "image": null,
+    "last_seen_on": "2025-06-05 13:29:33",
+    "name": "Ps Team",
+    "id": 77032728,
+    "type": "user",
+    "url": "https://podio.com/users/77032728",
+    "user_id": 77032728
+  },
+  "created_on": "2025-05-28 11:17:52",
+  "created_via": {
+    "auth_client_id": 5553,
+    "display": false,
+    "id": 5553,
+    "name": "Welcome Tasks",
+    "url": null
+  },
+  "description": "Both apps are available here: https://podio.com/site/mobile",
+  "due_date": "2025-05-29",
+  "due_on": "2025-05-29 20:59:59",
+  "due_time": null,
+  "external_id": null,
+  "files": [],
+  "is_liked": false,
+  "labels": [
+    {
+      "color": "D1F3EC",
+      "label_id": 5673579,
+      "text": "Update ladel"
+    }
+  ],
+  "like_count": 0,
+  "link": "https://podio.com/tasks/300975023",
+  "presence": {
+    "user_id": 77032728,
+    "signature": "0b879da261acb363d95398ddeacb46dd7d5e4e90",
+    "ref_type": "task",
+    "ref_id": 300975023
+  },
+  "private": true,
+  "push": {
+    "channel": "/task/300975023",
+    "timestamp": 1749130272,
+    "signature": "34226c49a50d4e3d66644a6d6a2382dcdcb0ddea",
+    "expires_in": 21600
+  },
+  "recurrence": null,
+  "ref": {
+    "created_by": {
+      "avatar": 128799219,
+      "avatar_id": 128799219,
+      "avatar_type": "file",
+      "image": {
+        "external_file_id": null,
+        "file_id": 128799219,
+        "hosted_by": "podio",
+        "hosted_by_humanized_name": "Podio",
+        "link": "https://files.podio.com/128799219",
+        "link_target": "_blank",
+        "thumbnail_link": "https://files.podio.com/128799219",
+        "uuid_link": "https://files.podio.com/768f766d-9ee6-4299-8cbb-b35f679d0a77"
+      },
+      "last_seen_on": "2015-01-08 12:23:54",
+      "name": "Igor Drobiazko",
+      "id": 2503534,
+      "type": "user",
+      "url": "https://podio.com/users/2503534",
+      "user_id": 2503534
+    },
+    "created_on": "2014-10-20 11:34:41",
+    "created_via": {
+      "auth_client_id": 1,
+      "display": false,
+      "id": 1,
+      "name": "Podio",
+      "url": null
+    },
+    "data": {
+      "item_accounting_info": {
+        "org_id": 786243,
+        "limit": 100,
+        "count": 26640,
+        "percent": 26640
+      },
+      "name": "Employee Network",
+      "org": {
+        "contract_status": "none",
+        "domains": [
+          "elastic.io"
+        ],
+        "image": {
+          "external_file_id": null,
+          "file_id": 1177280231,
+          "hosted_by": "podio",
+          "hosted_by_humanized_name": "Podio",
+          "link": "https://files.podio.com/1177280231",
+          "link_target": "_blank",
+          "thumbnail_link": "https://files.podio.com/1177280231",
+          "uuid_link": "https://files.podio.com/0b14697b-413c-43c2-83f2-5203f54a8b20"
+        },
+        "logo": 1177280231,
+        "name": "elastic.io",
+        "org_id": 786243,
+        "premium": false,
+        "segment": null,
+        "segment_size": null,
+        "status": "active",
+        "tier": null,
+        "type": "free",
+        "url": "https://podio.com/elasticio",
+        "url_label": "elasticio"
+      },
+      "org_id": 786243,
+      "sharefile_vault_url": null,
+      "space_id": 2771109,
+      "type": "emp_network",
+      "url": "https://podio.com/elasticio/employeenetwork",
+      "url_label": "employeenetwork"
+    },
+    "id": 2771109,
+    "link": "https://podio.com/elasticio/employeenetwork",
+    "title": "Employee Network",
+    "type": "space",
+    "type_name": "workspace"
+  },
+  "reminder": null,
+  "responsible": {
+    "image": null,
+    "last_seen_on": "2025-06-05 13:29:33",
+    "link": "https://podio.com/users/77032728",
+    "org_id": null,
+    "profile_id": 271581035,
+    "type": "user",
+    "space_id": null,
+    "user_id": 77032728,
+    "avatar": null,
+    "name": "Ps Team"
+  },
+  "rights": [
+    "rate",
+    "update",
+    "subscribe",
+    "view",
+    "add_file",
+    "comment",
+    "delete"
+  ],
+  "space_id": 2771109,
+  "started": false,
+  "status": "active",
+  "subscribed": true,
+  "subscribed_count": 1,
+  "task_id": 300975023,
+  "text": "Get tasks on the go. Download the iPhone or Android app now."
+}

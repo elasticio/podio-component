@@ -39,6 +39,24 @@ Now you can create new credentials for the component on the platform:
 
 ## Actions 
 
+### Lookup Object By ID
+
+Retrieves a single object using its ID.
+
+#### Configuration Fields
+
+- **Object Type** - (dropdown, required): The type of object to look up.
+
+#### Input Metadata
+
+- **ID Value** - (string, required): The ID of the object to look up.
+
+#### Output Metadata
+
+Returns an object with the result of the lookup.
+
+**Known limitation**: Currently, the `Generate Stub Sample` button only allows generating generic metadata, without specific object type details.
+
 ### Make Raw Request 
 
 Executes custom request.

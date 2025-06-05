@@ -31,3 +31,39 @@ export async function refreshSecret(credentialId: string) {
 }
 
 export const isNumberNaN = (num) => Number(num).toString() === 'NaN';
+
+export const lookupObjectByIdMapping = {
+  action: {
+    url: '/action/{id}',
+  },
+  app: {
+    url: '/app/{id}',
+  },
+  batch: {
+    url: '/batch/{id}',
+  },
+  comment: {
+    url: '/comment/{id}',
+  },
+  file: {
+    url: '/file/{id}',
+  },
+  flow: {
+    url: '/flow/{id}',
+  },
+  form: {
+    url: '/form/{id}',
+  },
+  item: {
+    url: '/item/{id}',
+  },
+  notification: {
+    url: '/notification/{id}',
+  },
+  organization: {
+    url: '/org/{id}',
+  },
+  task: {
+    url: '/task/{id}',
+  },
+};

@@ -1,6 +1,6 @@
 import * as commons from '@elastic.io/component-commons-library';
 import { messages } from 'elasticio-node';
-// import { lookupObjectByIdMapping } from '../utils';
+import { lookupObjectByIdMapping } from '../utils';
 import Client from '../Client';
 import lookupByIdObjects from '../schemas/objectTypes/lookupObjectById.json';
 
@@ -19,15 +19,15 @@ export async function processAction(msg: any, cfg: any) {
     throw new Error('No "ID Value" provided!');
   }
 
-  // let url = lookupObjectByIdMapping[objectType]?.url;
-  // if (!url) throw new Error(`Unsupported Object Type - ${objectType}`);
+  let url = lookupObjectByIdMapping[objectType]?.url;
+  if (!url) throw new Error(`Unsupported Object Type - ${objectType}`);
 
-  // url = url.replace('{id}', idValue);
+  url = url.replace('{id}', idValue);
 
   let result;
   try {
-    // const response = await client.apiRequest({ url, method: 'GET' });
-    // result = response.data;
+    const response = await client.apiRequest({ url, method: 'GET' });
+    result = response.data;
   } catch (err) {
     if (err.response) throw new Error(commons.getErrMsg(err.response));
     throw err;
