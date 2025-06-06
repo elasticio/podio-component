@@ -1,7 +1,7 @@
 {
   "title": "Podio component",
   "description": "A smart connector for accessing Podio API",
-  "version": "1.1.0-dev.1",
+  "version": "1.1.0-dev.2",
   "authClientTypes": [
     "oauth2"
   ],
@@ -33,6 +33,28 @@
     }
   },
   "actions": {
+    "deleteObjectById": {
+      "main": "./src/actions/deleteObjectById.js",
+      "title": "Delete Object By ID",
+      "help": {
+        "description": "Delete Object By ID",
+        "link": "/components/podio/index.html#delete-object-by-id"
+      },
+      "fields": {
+        "objectType": {
+          "label": "Object Type",
+          "viewClass": "SelectView",
+          "prompt": "Please select the type of object to delete",
+          "required": true,
+          "order": 10,
+          "model": "getDeleteByIdObjects"
+        }
+      },
+      "metadata": {
+        "in": "./src/schemas/metadata/deleteObjectById/in.json",
+        "out": "./src/schemas/metadata/deleteObjectById/out.json"
+      }
+    },
     "lookupObjectById": {
       "main": "./src/actions/lookupObjectById.js",
       "title": "Lookup Object By ID",
