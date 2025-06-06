@@ -1,0 +1,17 @@
+{
+  "app": "App",
+  "comment": "Comment",
+  "file": "File",
+  "flow": "Flow",
+  "form": "Form",
+  "hook": "Hook",
+  "integration": "Integration",
+  "item": "Item",
+  "space": "Space",
+  "status": "Status",
+  "label": "Label",
+  "task": "Task",
+  "view": "View",
+  "voting": "Voting Object",
+  "widget": "Widget"
+}

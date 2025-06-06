@@ -5,6 +5,7 @@
 * [Description](#description)
 * [Credentials](#credentials)
 * [Actions](#actions)
+  * [Delete Object By ID](#delete-object-by-id)
   * [Lookup Object By ID](#lookup-object-by-id)
   * [Make Raw Request](#make-raw-request)
 
@@ -38,7 +39,23 @@ Now you can create new credentials for the component on the platform:
 * **Number of retries** (number, optional, 5 by default) - How many times component should retry to make request 
 * **Delay between retries** (number ms, optional, 10000 by default) - How much time wait until new try
 
-## Actions 
+## Actions
+
+### Delete Object By ID
+
+Deletes a single object using its ID.
+
+#### Configuration Fields
+
+- **Object Type** - (dropdown, required): The type of the object to delete.
+
+#### Input Metadata
+
+- **ID Value** - (string, required): The ID of the object to delete.
+
+#### Output Metadata
+
+Returns the ID of the deleted object.
 
 ### Lookup Object By ID
 

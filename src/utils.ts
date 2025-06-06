@@ -32,6 +32,54 @@ export async function refreshSecret(credentialId: string) {
 
 export const isNumberNaN = (num) => Number(num).toString() === 'NaN';
 
+export const deleteObjectByIdMapping = {
+  app: {
+    url: '/app/{id}',
+  },
+  comment: {
+    url: '/comment/{id}',
+  },
+  file: {
+    url: '/file/{id}',
+  },
+  flow: {
+    url: '/flow/{id}',
+  },
+  form: {
+    url: '/form/{id}',
+  },
+  item: {
+    url: '/item/{id}',
+  },
+  hook: {
+    url: '/hook/{id}',
+  },
+  integration: {
+    url: '/integration/{id}',
+  },
+  space: {
+    url: '/space/{id}',
+  },
+  status: {
+    url: '/status/{id}',
+  },
+  label: {
+    url: '/task/label/{id}',
+  },
+  task: {
+    url: '/task/{id}',
+  },
+  view: {
+    url: '/view/{id}',
+  },
+  voting: {
+    url: '/voting/{id}',
+  },
+  widget: {
+    url: '/widget/{id}',
+  },
+};
+
 export const lookupObjectByIdMapping = {
   action: {
     url: '/action/{id}',
