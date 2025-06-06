@@ -23,11 +23,10 @@ describe('"Delete Object by ID" action', async () => {
     });
     it('should successfully delete contact', async () => {
       const cfg = {
-        apiKey: 'abc123',
-        objectType: 'contact'
+        objectType: 'task'
       };
       const msg = {
-        body: { idValue: 'cont_iVxfdCfWK4RUBkqOOKlEy4aq9kI8hGyYdl2wiLAMkBH' },
+        body: { idValue: 'abc123' },
       };
       const { body } = await processAction.call(getContext(), msg, cfg);
       expect(execRequest.callCount).to.equal(1);
