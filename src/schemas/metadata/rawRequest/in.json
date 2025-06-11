@@ -1,0 +1,28 @@
+{
+  "type": "object",
+  "properties": {
+    "method": {
+      "type": "string",
+      "required": true,
+      "title": "Method",
+      "enum": [
+        "DELETE",
+        "GET",
+        "POST",
+        "PUT"
+      ]
+    },
+    "url": {
+      "type": "string",
+      "required": true,
+      "title": "URL",
+      "help": {
+        "description": "Path of the resource relative to the base URL (here comes a part of the path that goes after 'https://api.podio.com')"
+      }
+    },
+    "data": {
+      "type": "object",
+      "title": "Request Body"
+    }
+  }
+}

@@ -5,11 +5,9 @@
   "scripts": {
     "audit": "better-npm-audit audit --level high --production",
     "lint": "eslint --ext .ts --quiet --fix",
-    "pretest": "eslint --ext .ts --quiet --fix && find src spec spec-integration -name \\\"*.js\\\" -type f -delete && rm -f verifyCredentials.js",
+    "pretest": "eslint --ext .ts --quiet --fix && find src spec -name \\\"*.js\\\" -type f -delete && rm -f verifyCredentials.js",
     "test": "mocha --require ts-node/register \"spec/**/*test.ts\"",
-    "integrationTest": "mocha --require ts-node/register --timeout 50000 \"spec-integration/**/*test.ts\" \"spec-integration/verifyCredentials.test.ts\"",
-    "dev:test": "find src spec spec-integration -name \\\"*.js\\\" -type f -delete && rm -f verifyCredentials.js && tsc && npm run test",
-    "dev:integrationTest": "env LOG_LEVEL=debug find src spec spec-integration -name \\\"*.js\\\" -type f -delete && rm -f verifyCredentials.js && tsc && npm run integrationTest",
+    "dev:test": "find src spec -name \\\"*.js\\\" -type f -delete && rm -f verifyCredentials.js && tsc && npm run test",
     "posttest": "tsc"
   },
   "repository": {
