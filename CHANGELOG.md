@@ -1,4 +1,4 @@
-# 1.1.0 (June 15, 2025)
+# 1.1.0 (June 11, 2025)
 
 * Added `Delete Object By ID` Action
 * Added `Lookup Object By ID` Action
