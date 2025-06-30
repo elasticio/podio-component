@@ -1,7 +1,7 @@
 {
   "title": "Podio component",
   "description": "A smart connector for accessing Podio API",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "authClientTypes": [
     "oauth2"
   ],
@@ -90,5 +90,93 @@
       }
     }
   },
-  "triggers": {}
+  "triggers": {
+    "getNewAndUpdatedObjectsPolling": {
+      "main": "./src/triggers/getNewAndUpdatedObjectsPolling.js",
+      "title": "Get New and Updated Objects Polling",
+      "type": "polling",
+      "help": {
+        "description": "Poll for new and/or updated objects",
+        "link": "/components/podio/index.html#get-new-and-updated-objects-polling"
+      },
+      "fields": {
+        "objectType": {
+          "label": "Object Type",
+          "viewClass": "SelectView",
+          "help": {
+            "description": "Please select the type of object to poll on"
+          },
+          "required": true,
+          "order": 90,
+          "model": {
+            "item": "Items",
+            "status": "Statuses",
+            "task": "Tasks",
+            "user": "Users"
+          }
+        },
+        "pollConfig": {
+          "label": "Timestamp field to poll on",
+          "viewClass": "SelectView",
+          "required": true,
+          "order": 80,
+          "help": {
+            "description": "Please select the timestamp field to poll on"
+          },
+          "require": [
+            "objectType"
+          ],
+          "model": "getTriggerPollConfig"
+        },
+        "fieldsToReturn": {
+          "label": "Fields you want to return for the object you're filtering for",
+          "viewClass": "MultiSelectView",
+          "required": false,
+          "order": 70,
+          "help": {
+            "description": "By default, the Advanced Filtering API only returns the IDs of the matched objects to improve performance. If you want to get more the data for the object, you will need to specify which fields you want returned for the object you're filtering for"
+          },
+          "require": [
+            "objectType"
+          ],
+          "model": "getFieldsToReturn"
+        },
+        "emitBehavior": {
+          "order": 60,
+          "viewClass": "SelectView",
+          "label": "Emit Behavior",
+          "required": false,
+          "placeholder": "Emit individually",
+          "help": {
+            "description": "Select an output method. Defaults to: Emit individually"
+          },
+          "model": {
+            "emitIndividually": "Emit individually",
+            "emitPage": "Emit page"
+          }
+        },
+        "pageSize": {
+          "required": false,
+          "viewClass": "TextFieldView",
+          "order": 40,
+          "label": "Size of Polling Page",
+          "placeholder": "100",
+          "help": {
+            "description": "Number of records to be fetched (defaults to 100) per request. Positive integer only, maximum 100"
+          }
+        },
+        "startTime": {
+          "required": false,
+          "label": "Start Time",
+          "viewClass": "TextFieldView",
+          "order": 30,
+          "placeholder": "1970-01-01T00:00:00Z",
+          "help": {
+            "description": "Beginning time to start polling from (inclusive) in format \"YYYY-MM-DD[T]HH:MM:SS[Z]\" where [] wraps a fixed character value. Defaults to 1970-01-01T00:00:00Z"
+          }
+        }
+      },
+      "dynamicMetadata": true
+    }
+  }
 }
